@@ -23,6 +23,9 @@ header{
 .align_items_center{
     align-items: center;
 }
+.center_text{
+    text-align: center;
+}
 header img{
     margin-right: 665px;
 }
@@ -81,5 +84,71 @@ header a{
     line-height: 48px;
     text-align: center; color: #FFFFFF;
 }
-
-
+.presentation{
+    padding-top: 80px;
+}
+.presentation .d_flex.space_between.align_items_center div{
+    max-width: 306px;
+}
+.presentation div p:first-child{ font-family: 'Gothic A1', sans-serif; font-style: normal; font-weight: 400; font-size: 12px; line-height: 20px;letter-spacing: 2px; text-transform: uppercase; margin-bottom: 30px;color: #A8A8A8;
+}
+.presentation div h3{
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px; margin-bottom: 22px;
+}
+.presentation div p:last-child{
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #6B6B6B;
+}
+.presentation .d_flex.space_between.align_items_center.pics{
+    max-width: 842px; margin: auto auto 160px;
+}
+.d_flex.space_between.w-100 .center_text{
+    max-width: 371px
+}
+.d_flex.space_between.w-100 .center_text p:nth-child(2){
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px; margin-bottom: 17px;
+}
+.d_flex.space_between.w-100 .center_text p:last-child{
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #6B6B6B;
+}
+.d_flex.space_between.w-100 .center_text img{
+    margin-bottom: 40px;
+}
+.presentation .indent{
+    margin-bottom: 163px;
+}
+.presentation  div:nth-child(5) div p:first-child{
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 59px;
+    line-height: 90px; color: #1B1B1B;
+}
+.presentation  div:nth-child(5) div p:last-child{
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center; color: #1B1B1B;
+}
+.presentation .stats{
+    margin-bottom: 170px;
+}
