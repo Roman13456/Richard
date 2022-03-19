@@ -1,3 +1,85 @@
-p{
-
+*{
+    padding: 0;
+    margin: 0;
 }
+.landing{
+    background: url("../images/Landing.jpg") no-repeat; background-size: cover; box-sizing: border-box; height: 100vh;
+}
+.central_block{
+    max-width: 1200px; margin: auto;
+}
+.w-100{
+    width: 100%;
+}
+.d_flex{
+    display: flex;
+}
+.space_between{
+    justify-content: space-between;
+}
+header{
+    position: absolute; top: 29px
+}
+.align_items_center{
+    align-items: center;
+}
+header img{
+    margin-right: 665px;
+}
+header a{
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;color: #FFFFFF;margin-right:30px;
+    text-decoration: none;
+}
+.landing h1{
+    margin: 0 0 10px;
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 80px;color: #FFFFFF;padding-top: 298px;
+}
+.landing p{
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;color: #FFFFFF; margin-bottom: 25px;
+}
+.landing a{
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;color: #FFFFFF;background: #FC0A7E;
+    border-radius: 3px; padding: 20px 40px; text-decoration: none;
+}
+.landing{
+    padding-bottom: 277px;
+}
+.second_page{
+    padding-top: 100px;background: #1B1B1B;
+}
+.second_page p{
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase; margin-bottom: 30px; color: #A8A8A8;
+}
+.second_page h2{
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: center; color: #FFFFFF;
+}
+
+
