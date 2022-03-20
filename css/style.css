@@ -8,6 +8,12 @@
 .central_block{
     max-width: 1200px; margin: auto;
 }
+.d_block{
+    display: block;
+}
+.block_inline{
+    display: inline-block;
+}
 .w-100{
     width: 100%;
 }
@@ -18,7 +24,7 @@
     justify-content: space-between;
 }
 header{
-    position: absolute; top: 29px
+    position: absolute; top: 29px;z-index: 1;
 }
 .align_items_center{
     align-items: center;
@@ -26,8 +32,8 @@ header{
 .center_text{
     text-align: center;
 }
-header img{
-    margin-right: 665px;
+header .logo{
+    margin-right: 665px; display: inline-block;
 }
 header a{
     font-family: 'Gothic A1', sans-serif;
@@ -61,10 +67,14 @@ header a{
     border-radius: 3px; padding: 20px 40px; text-decoration: none;
 }
 .landing{
-    padding-bottom: 277px;
+    padding-bottom: 277px; position: relative;
+
 }
 .second_page{
     padding-top: 100px;background: #1B1B1B;
+}
+.landing_pic{
+    position: absolute; right: 44px;bottom: 0;
 }
 .second_page p{
     font-family: 'Gothic A1', sans-serif;
@@ -152,3 +162,46 @@ header a{
 .presentation .stats{
     margin-bottom: 170px;
 }
+.presentation .d_flex.space_between.align_items_center.pics.last_two{
+    max-width: 931px;
+}
+.presentation .quote p:first-child{
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: #6B6B6B; margin-bottom: 17px;
+}
+.presentation .quote div p:first-child{
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #6B6B6B; margin-right: 20px; margin-bottom: 0;
+}
+.presentation .quote img{
+    margin-right: 20px; width: 30px;
+}
+.quote div p:last-child{
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #6B6B6B;
+}
+.quotes {
+    text-align: center; margin-bottom: 66px;
+}
+.quote{
+    text-align: center; margin: auto
+}
+.owl-carousel .owl-item.active{
+
+}
+

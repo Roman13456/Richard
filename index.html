@@ -6,8 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://resources/demos/style.css">
     <script src="https://kit.fontawesome.com/82c8346409.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,9 +19,15 @@
 
 </head>
 <body>
+
+<div id="dialog" title="Basic dialog">
+    <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the &apos;x&apos; icon.</p>
+</div>
 <header class="w-100">
     <div class="central_block w-100 d_flex space_between align_items_center">
-        <img src="images/IMAGE.png" alt="Richard">
+        <a class="logo" href="#">
+            <img src="images/IMAGE.png" alt="Richard">
+        </a>
         <nav class="d_flex space_between">
             <a href="#">About</a>
             <a href="#">Features</a>
@@ -27,10 +37,13 @@
     </div>
 </header>
 <section class="landing w-100">
+    <div class="landing_pic d_block">
+        <img class="w-100" src="images/landing_pic.png" alt="landing picture">
+    </div>
     <div class="central_block">
         <h1>Momentum</h1>
         <p>Launch your product — and savor the momentum.</p>
-        <a href="#">Get the App</a>
+        <a href="#" id="opener">Get the App</a>
         <i class="fa-solid fa-arrow-down-long"></i>
     </div>
 </section>
@@ -102,7 +115,7 @@
                 <p>Ullamcorper</p>
             </div>
         </div>
-        <div class="d_flex space_between align_items_center pics">
+        <div class="d_flex space_between align_items_center pics last_two">
             <div>
                 <p>Aenean Consectetur Porta</p>
                 <h3>Sem Risus Elit Vestibulum</h3>
@@ -110,7 +123,7 @@
             </div>
             <img src="images/burgers.jpg" alt="burgers">
         </div>
-        <div class="d_flex space_between align_items_center pics">
+        <div class="d_flex space_between align_items_center pics last_two">
             <img src="images/chips.jpg" alt="chips&burger">
             <div>
                 <p>Aenean Consectetur Porta</p>
@@ -120,5 +133,40 @@
         </div>
     </div>
 </section>
+<div class="owl-carousel">
+    <div>
+        <section class="carousel">
+            <div class="central_block">
+                <div class="quotes">
+                    <img  src="images/quotes.svg" alt="quotes">
+                </div>
+                <div class="quote">
+                    <p>HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Pus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.ing</p>
+                    <div class="d_flex space_between align_items_center">
+                        <p>Joshua Home</p>
+                        <img src="images/line.svg" alt="line">
+                        <p><strong>New York Times</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div> Your Content </div>
+    <div> Your Content </div>
+    <div> Your Content </div>
+    <div> Your Content </div>
+    <div> Your Content </div>
+    <div> Your Content </div>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+</script>
+<script src="JS/owl.carousel.js"></script>
+<script src="JS/owl.carousel.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="JS/Scripts.js"></script>
 </body>
 </html>
