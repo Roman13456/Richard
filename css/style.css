@@ -11,6 +11,9 @@
 .d_block{
     display: block;
 }
+.justify_center{
+    justify-content: center;
+}
 .block_inline{
     display: inline-block;
 }
@@ -22,6 +25,9 @@
 }
 .space_between{
     justify-content: space-between;
+}
+.space_around{
+    justify-content: space-around;
 }
 header{
     position: absolute; top: 29px;z-index: 1;
@@ -67,15 +73,13 @@ header a{
     border-radius: 3px; padding: 20px 40px; text-decoration: none;
 }
 .landing{
-    padding-bottom: 277px; position: relative;
+    padding-bottom: 277px;
 
 }
 .second_page{
     padding-top: 100px;background: #1B1B1B;
 }
-.landing_pic{
-    position: absolute; right: 44px;bottom: 0;
-}
+
 .second_page p{
     font-family: 'Gothic A1', sans-serif;
     font-style: normal;
@@ -165,7 +169,19 @@ header a{
 .presentation .d_flex.space_between.align_items_center.pics.last_two{
     max-width: 931px;
 }
-.presentation .quote p:first-child{
+.quotes{
+    text-align: center; margin-bottom: 66px;
+}
+.quote{
+    max-width: 700px; margin: auto; text-align: center;
+}
+.carousel{
+    background: url("../images/companies.jpg") no-repeat bottom center; padding-bottom: 272px;
+}
+.owl-carousel .quote .quotes img{
+    width: 58px; display: inline-block;
+}
+.carousel .central_block .quote p{
     font-family: 'Gothic A1', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -174,19 +190,22 @@ header a{
     text-align: center;
     color: #6B6B6B; margin-bottom: 17px;
 }
-.presentation .quote div p:first-child{
+.quote .d_flex.align_items_center p:first-child{
     font-family: 'Gothic A1', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
     text-align: center;
-    color: #6B6B6B; margin-right: 20px; margin-bottom: 0;
+    color: #6B6B6B;
 }
-.presentation .quote img{
-    margin-right: 20px; width: 30px;
+.quote img{
+    margin: 0 20px
 }
-.quote div p:last-child{
+.quote .d_flex.align_items_center.center_text{
+    justify-content: center;
+}
+.quote .d_flex.align_items_center p:last-child{
     font-family: 'Gothic A1', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -195,13 +214,129 @@ header a{
     text-align: center;
     color: #6B6B6B;
 }
-.quotes {
-    text-align: center; margin-bottom: 66px;
+.carousel .quote .d_flex.align_items_center p{
+    margin-bottom: 0;
 }
-.quote{
-    text-align: center; margin: auto
+.owl-carousel .owl-item img{
+    width: 30px;
 }
-.owl-carousel .owl-item.active{
+.owl-carousel .owl-dots{
+    text-align: center; width: 100%; display: inline-block; bottom: -88px;position: absolute;
+}
+.owl-carousel .owl-dot{
+    margin-right: 16px;
+}
+.owl-carousel .owl-dot span{
+    width: 7px; height: 7px; background: #6B6B6B;display: inline-block;
+}
+.owl-carousel .owl-dot.active span{
+    background: #1B1B1B;
+}
+.container h3{
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: center; margin-bottom: 40px;color: #FFFFFF
+}
+.container a:first-child{
+    padding: 20px 40px; background: #FC0A7E; text-decoration: none; margin-right: 10px;color: #FFFFFF;
+    border-radius: 3px;
+}
+.container a:last-child{
+    padding: 19px 39px; border: 1px solid #B04BB3;text-decoration: none;
+    box-sizing: border-box;color: #FFFFFF
+}
+.download_page{
+    padding-top: 118px;
+}
 
+.download_page .container{
+    background: url("../images/download_page.jpg") no-repeat bottom center;background-size: cover;
+    padding: 165px 0 176px;
 }
+.form{
+    background: #1B1B1B; padding: 129px 0 126px; color: #FFFFFF;
+}
+.form h3{
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: center; margin-bottom: 20px;
+}
+.form p{
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #6B6B6B; margin-bottom: 40px;
+}
+.form div{
+    justify-content: center;
+}
+.form div input:nth-child(2){
+    max-width:263px; width: 100%; padding: 22px;
+    font-family: 'Gothic A1', sans-serif;box-shadow: 0 0 0 #FC0A7E;
+    border-radius: 3px 0 0 3px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px; display: inline-block;
+    line-height: 26px; color: #1B1B1B;
+}
+.form div input:last-child{
+    background: #FC0A7E;
+    border-radius: 0 3px 3px 0;
+    max-width: 154px; width: 100%;
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+.form div label{
+    display: none;
+}
+footer{
+    background: #1B1B1B;; padding: 20px 0 69px;
+}
+footer .center_text{
+    margin-bottom: 29px;
+}
+footer a{
+    text-decoration: none;
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+    color: #6B6B6B; margin-right: 30px;
+}
+footer a:last-child{
+    margin: 0;
+}
+
+
+/**.owl-carousel .owl-dots{
+    position: absolute; bottom: 0; text-align: center; width: 100%;
+}
+.owl-carousel .owl-dot{
+    display: inline-block; text-align: center; width: auto; height: auto;
+}
+.owl-carousel .owl-dot{
+    margin-right:16px ;
+}
+.owl-carousel .owl-dot span{
+    width: 7px;
+    height: 7px;
+    background: grey; display: inline-block;
+}
+.owl-carousel .owl-dot.active span{
+    background: #222222;
+}**/
+
 
