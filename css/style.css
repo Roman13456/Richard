@@ -354,7 +354,7 @@ footer a:hover{
     background: #FC0A7E; color: #FFFFFF;
 }
 .ui-dialog .ui-dialog-titlebar span{
-
+    color: #FC0A7E;
 }
 .ui-dialog .ui-dialog-titlebar:before{
     content: "Richard";
@@ -365,7 +365,7 @@ footer a:hover{
 /* Navbar container */
 .navbar {
     overflow: hidden;
-    background-color: #FC0A7E;
+    background-color: #b51863;
     font-family: 'Gothic A1', sans-serif;
 }
 
@@ -406,7 +406,7 @@ footer a:hover{
 .dropdown-content {
     display: none;
     position: absolute; right: 0;
-    background: #FC0A7E;
+    background: #b51863;
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;

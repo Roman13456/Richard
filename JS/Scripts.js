@@ -16,6 +16,7 @@ $( function() {
     });
 } );
 
+
 $(document).ready(function(){
 
     $('.owl-carousel').owlCarousel({
@@ -45,6 +46,8 @@ $(document).ready(function(){
     $("#nav").removeAttr("style");
 }
 });
+
+
 
 
 
