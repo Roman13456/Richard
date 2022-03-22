@@ -345,7 +345,7 @@ footer a:hover{
 }
 
 .ui-widget-content.ui-front.ui-draggable.ui-resizable.ui-dialog.ui-corner-all.ui-widget{
-    right:40%; bottom:40% ;background: #1B1B1B;
+    right:40%; bottom:55% ;background: #1B1B1B;
 }
 .ui-dialog-content.ui-widget-content p{
     color: #FFFFFF;
