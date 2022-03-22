@@ -32,6 +32,9 @@
 header{
     position: absolute; top: 29px;z-index: 1;
 }
+header .central_block .w-100.d_flex.space_between.align_items_center{
+    position: relative;
+}
 .align_items_center{
     align-items: center;
 }
@@ -402,7 +405,7 @@ footer a:hover{
 /* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
-    position: absolute; right: 38px;
+    position: absolute; right: 0;
     background: #FC0A7E;
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);

@@ -55,9 +55,6 @@
     .central_block{
     max-width: 390px;
     }
-    .dropdown-content {
-        right: 15px;
-    }
     .landing h1{
         font-size: 60px;
     }
@@ -67,16 +64,10 @@
     .central_block{
         max-width: 349px;
     }
-    .dropdown-content {
-        right: 13px;
-    }
 }
 @media only screen and (max-width: 360px) {
     .central_block{
         max-width: 336px;
-    }
-    .dropdown-content {
-        right: 12px;
     }
 }
 @media only screen and (max-width: 320px) {
@@ -85,8 +76,5 @@
     }
     .landing h1{
         padding-top: 150px;
-    }
-    .dropdown-content {
-        right: 5px;
     }
 }
