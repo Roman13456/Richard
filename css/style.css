@@ -353,12 +353,6 @@ footer a:hover{
 .ui-dialog .ui-dialog-titlebar{
     background: #FC0A7E; color: #FFFFFF;
 }
-.ui-dialog .ui-dialog-titlebar span{
-    color: #FC0A7E;
-}
-.ui-dialog .ui-dialog-titlebar:before{
-    content: "Richard";
-}
 .navbar{
     display: none;
 }
