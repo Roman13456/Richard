@@ -39,7 +39,10 @@ header{
     text-align: center;
 }
 header .logo{
-    margin-right: 665px; display: inline-block;
+    display: inline-block;
+}
+header .central_block .w-100.d_flex.space_between.align_items_center{
+    max-width: 1137px;
 }
 header a{
     font-family: 'Gothic A1', sans-serif;
@@ -103,6 +106,9 @@ header a{
 }
 .presentation .d_flex.space_between.align_items_center div{
     max-width: 306px;
+}
+.presentation .d_flex.space_between.align_items_center .d_block.pics{
+    max-width: 519px;
 }
 .presentation div p:first-child{ font-family: 'Gothic A1', sans-serif; font-style: normal; font-weight: 400; font-size: 12px; line-height: 20px;letter-spacing: 2px; text-transform: uppercase; margin-bottom: 30px;color: #A8A8A8;
 }
@@ -172,11 +178,11 @@ header a{
 .quotes{
     text-align: center; margin-bottom: 66px;
 }
+.mr_20{
+    margin: 0 20px;
+}
 .quote{
     max-width: 700px; margin: auto; text-align: center;
-}
-.carousel{
-    background: url("../images/companies.jpg") no-repeat bottom center; padding-bottom: 272px;
 }
 .owl-carousel .quote .quotes img{
     width: 58px; display: inline-block;
@@ -197,7 +203,7 @@ header a{
     font-size: 16px;
     line-height: 30px;
     text-align: center;
-    color: #6B6B6B;
+    color: #6B6B6B; padding-right: 20px;
 }
 .quote img{
     margin: 0 20px
@@ -216,6 +222,9 @@ header a{
 }
 .carousel .quote .d_flex.align_items_center p{
     margin-bottom: 0;
+}
+.owl-carousel.owl-loaded{
+    margin-bottom: 284px;
 }
 .owl-carousel .owl-item img{
     width: 30px;
@@ -318,6 +327,105 @@ footer a{
 }
 footer a:last-child{
     margin: 0;
+}
+a:hover{
+    color: lightgray;
+}
+.container a:last-child:hover{
+    color: lightgray;
+}
+footer a:hover{
+    color: lightgray;
+}
+.container a:first-child:hover{
+    color: lightgray;
+}
+.ui-widget-content.ui-front.ui-draggable.ui-resizable.ui-dialog.ui-corner-all.ui-widget{
+    right:40%; bottom:40% ;background: #1B1B1B;
+}
+.ui-dialog-content.ui-widget-content p{
+    color: #FFFFFF;
+}
+.ui-dialog .ui-dialog-titlebar{
+    background: #FC0A7E; color: #FFFFFF;
+}
+.ui-dialog .ui-dialog-titlebar span{
+
+}
+.ui-dialog .ui-dialog-titlebar:before{
+    content: "Richard";
+}
+.navbar{
+    display: none;
+}
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #FC0A7E;
+    font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #FC0A7E;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute; right: 38px;
+    background: #FC0A7E;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #FC0A7E;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 
