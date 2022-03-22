@@ -425,6 +425,34 @@ footer a:hover{
 .dropdown:hover .dropdown-content {
     display: block;
 }
+@keyframes  header_anim {
+    0%{
+        top:-50px;
+    }
+    50%{
+        top:-25px;
+    }
+    100%{
+        top:29px;
+    }
+}
+@keyframes landing {
+    0%{
+        left:-50px
+    }
+    50%{
+        left:-20px
+    }
+    100%{
+        left:0
+    }
+}
+.landing.w-100 .central_block {
+    animation: landing 1s linear; position: relative;
+}
+header {
+    animation: header_anim 1s linear;
+}
 
 
 
