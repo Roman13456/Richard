@@ -59,7 +59,9 @@
         font-size: 60px;
     }
 }
-
+footer a:last-child {
+    margin: 0 15px;
+}
 @media only screen and (max-width: 375px) {
     .central_block{
         max-width: 349px;
@@ -68,6 +70,9 @@
 @media only screen and (max-width: 360px) {
     .central_block{
         max-width: 336px;
+    }
+    .download_page .container a{
+        margin: 0;
     }
 }
 @media only screen and (max-width: 320px) {

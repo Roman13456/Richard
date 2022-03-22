@@ -253,12 +253,12 @@ header a{
     text-align: center; margin-bottom: 40px;color: #FFFFFF
 }
 .container a:first-child{
-    padding: 20px 40px; background: #FC0A7E; text-decoration: none; margin-right: 10px;color: #FFFFFF;
+    padding: 20px 40px; background: #FC0A7E; text-decoration: none; margin-right: 5px;color: #FFFFFF;
     border-radius: 3px;
 }
 .container a:last-child{
     padding: 19px 39px; border: 1px solid #B04BB3;text-decoration: none;
-    box-sizing: border-box;color: #FFFFFF
+    box-sizing: border-box;color: #FFFFFF;margin-left: 5px;
 }
 .download_page{
     padding-top: 118px;
@@ -433,22 +433,5 @@ footer a:hover{
 }
 
 
-/**.owl-carousel .owl-dots{
-    position: absolute; bottom: 0; text-align: center; width: 100%;
-}
-.owl-carousel .owl-dot{
-    display: inline-block; text-align: center; width: auto; height: auto;
-}
-.owl-carousel .owl-dot{
-    margin-right:16px ;
-}
-.owl-carousel .owl-dot span{
-    width: 7px;
-    height: 7px;
-    background: grey; display: inline-block;
-}
-.owl-carousel .owl-dot.active span{
-    background: #222222;
-}**/
 
 
