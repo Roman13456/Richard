@@ -51,9 +51,6 @@ header a:last-child{
 .navbar{
     margin-right: 10px;
 }
-header .central_block .w-100.d_flex.space_between.align_items_center{
-    max-width: 1137px;
-}
 header a{
     font-family: 'Gothic A1', sans-serif;
     font-style: normal;
@@ -117,22 +114,23 @@ header a{
 .presentation{
     padding-top: 80px;
 }
-.presentation .d_flex.space_between.align_items_center div{
+.presentation .d_flex.space_between.align_items_center div,.descriptions .d_flex.space_between.align_items_center div{
     max-width: 306px;
 }
-.presentation .d_flex.space_between.align_items_center .d_block.pics{
+.presentation .d_flex.space_between.align_items_center .d_block.pics,
+.descriptions .d_flex.space_between.align_items_center .d_block.pics{
     max-width: 519px;
 }
-.presentation div p:first-child{ font-family: 'Gothic A1', sans-serif; font-style: normal; font-weight: 400; font-size: 12px; line-height: 20px;letter-spacing: 2px; text-transform: uppercase; margin-bottom: 30px;color: #A8A8A8;
+.presentation div p:first-child, .descriptions div p:first-child{ font-family: 'Gothic A1', sans-serif; font-style: normal; font-weight: 400; font-size: 12px; line-height: 20px;letter-spacing: 2px; text-transform: uppercase; margin-bottom: 30px;color: #A8A8A8;
 }
-.presentation div h3{
+.presentation div h3,.descriptions div h3{
     font-family: 'Gothic A1', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 38px;
     line-height: 48px; margin-bottom: 22px;
 }
-.presentation div p:last-child{
+.presentation div p:last-child,.descriptions div p:last-child{
     font-family: 'Gothic A1', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -140,7 +138,7 @@ header a{
     line-height: 30px;
     color: #6B6B6B;
 }
-.presentation .d_flex.space_between.align_items_center.pics{
+.presentation .d_flex.space_between.align_items_center.pics, .descriptions .d_flex.space_between.align_items_center.pics{
     max-width: 842px; margin: auto auto 160px;
 }
 .d_flex.space_between.w-100 .center_text{
@@ -164,17 +162,17 @@ header a{
 .d_flex.space_between.w-100 .center_text img{
     margin-bottom: 40px;
 }
-.presentation .indent{
+.indent{
     margin-bottom: 163px;
 }
-.presentation  div:nth-child(5) div p:first-child{
+.statistics .d_flex div p:first-child{
     font-family: 'Gothic A1', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 59px;
     line-height: 90px; color: #1B1B1B;
 }
-.presentation  div:nth-child(5) div p:last-child{
+.statistics .d_flex div p:last-child{
     font-family: 'Gothic A1', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -182,10 +180,10 @@ header a{
     line-height: 24px;
     text-align: center; color: #1B1B1B;
 }
-.presentation .stats{
-    margin-bottom: 170px;
+ .statistics{
+    padding-bottom: 170px;
 }
-.presentation .d_flex.space_between.align_items_center.pics.last_two{
+.descriptions .d_flex.space_between.align_items_center.pics.last_two{
     max-width: 931px;
 }
 .quotes{
@@ -374,6 +372,9 @@ footer a:hover{
     background-color: #b51863;
     font-family: 'Gothic A1', sans-serif;
 }
+.dropdown-content{
+    margin-right: 10px
+}
 .navbar a {
     float: left;
     font-size: 16px;
@@ -450,28 +451,28 @@ header {
     animation: header_anim 1s linear;
 }
 @media only screen and (max-width: 1024px) {
-    .central_block{
+    html .central_block{
         max-width: 924px;
     }
 }
 @media only screen and (max-width: 992px) {
-    .central_block{
+    html .central_block{
         max-width: 892px;
     }
 }
 @media only screen and (max-width: 768px) {
-    .central_block{
+    html .central_block{
         max-width: 668px;
     }
     .d_flex.space_between.w-100 .center_text{
         margin: 15px 15px;
     }
-    .presentation .d_flex.space_between.align_items_center div{
+    .presentation .d_flex.space_between.align_items_center div, .descriptions .d_flex.space_between.align_items_center div{
         margin: 0 10px;
     }
 }
 @media only screen and (max-width: 576px) {
-    .central_block{
+    html .central_block{
         max-width: 500px;
     }
     header a{
@@ -480,16 +481,19 @@ header {
     .navbar{
         display: block;
     }
+    header a:last-child{
+        margin: 0;
+    }
     header .central_block nav{
         display: none;
     }
     header .central_block .w-100.d_flex.space_between.align_items_center{
         justify-content: space-between;
     }
-    .presentation .d_flex.space_between.align_items_center div{
+    .presentation .d_flex.space_between.align_items_center div, .descriptions .d_flex.space_between.align_items_center div{
         max-width: none; text-align: center;
     }
-    .presentation .d_flex.space_between.align_items_center.pics {
+    .presentation .d_flex.space_between.align_items_center.pics, .descriptions .d_flex.space_between.align_items_center.pics{
         margin: auto auto 60px;
     }
     .d_flex{
@@ -498,7 +502,7 @@ header {
     .order{
         order: -1;
     }
-    .presentation .d_flex.space_between.align_items_center div{
+    .presentation .d_flex.space_between.align_items_center div, .descriptions .d_flex.space_between.align_items_center div{
         margin-bottom: 20px;
     }
     footer a{
@@ -506,7 +510,7 @@ header {
     }
 }
 @media only screen and (max-width: 420px) {
-    .central_block{
+    html .central_block{
         max-width: 390px;
     }
     .landing h1{
@@ -517,12 +521,12 @@ footer a:last-child {
     margin: 0 15px;
 }
 @media only screen and (max-width: 375px) {
-    .central_block{
+    html .central_block{
         max-width: 349px;
     }
 }
 @media only screen and (max-width: 360px) {
-    .central_block{
+    html .central_block{
         max-width: 336px;
     }
     .download_page .container a{
@@ -530,7 +534,7 @@ footer a:last-child {
     }
 }
 @media only screen and (max-width: 320px) {
-    .central_block{
+    html .central_block{
         max-width: 310px;
     }
     .landing h1{
