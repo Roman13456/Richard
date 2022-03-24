@@ -5,6 +5,9 @@
 .landing{
     background: url("../images/Landing.jpg") no-repeat; background-size: cover; box-sizing: border-box; height: 100vh;
 }
+.landing .central_block.d_flex div:last-child{
+    margin-top: 120px;
+}
 .central_block{
     max-width: 1200px; margin: auto;
 }
@@ -42,7 +45,13 @@ header .central_block .w-100.d_flex.space_between.align_items_center{
     text-align: center;
 }
 header .logo{
-    display: inline-block;
+    padding-left: 10px;display: inline-block;
+}
+header a:last-child{
+    margin: 0;
+}
+.navbar{
+    margin-right: 10px;
 }
 header .central_block .w-100.d_flex.space_between.align_items_center{
     max-width: 1137px;
@@ -81,6 +90,9 @@ header a{
 .landing{
     padding-bottom: 277px;
 
+}
+.landing .central_block div:first-child{
+    padding-left: 10px;
 }
 .second_page{
     padding-top: 100px;background: #1B1B1B;
@@ -298,7 +310,7 @@ header a{
     font-style: normal;
     font-weight: 400;
     font-size: 16px; display: inline-block;
-    line-height: 26px; color: #1B1B1B;
+    line-height: 26px; color: #1B1B1B; border: none;
 }
 .form div input:last-child{
     background: #FC0A7E;
@@ -308,7 +320,10 @@ header a{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 26px;padding: 22px;
+    line-height: 26px;padding: 22px;border: none
+}
+.form div input:last-child:hover{
+    color: lightgray;
 }
 .form div label{
     display: none;
