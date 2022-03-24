@@ -5,9 +5,7 @@
 .landing{
     background: url("../images/Landing.jpg") no-repeat; background-size: cover; box-sizing: border-box; height: 100vh;
 }
-.landing .central_block.d_flex div:last-child{
-    margin-top: 120px;
-}
+
 .central_block{
     max-width: 1200px; margin: auto;
 }
