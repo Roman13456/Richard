@@ -201,7 +201,7 @@ a:hover {
 }
 .nav__content {
     position: fixed;
-    visibility: hidden;
+    /**visibility: hidden;**/
     top: 50%;
     margin-top: 20px;
     -webkit-transform: translate(0%, -50%);
@@ -210,6 +210,7 @@ a:hover {
     text-align: center;
 }
 .nav__list {
+    /**display: flex;**/
     position: relative;
     padding: 0;
     margin: 0;
@@ -220,7 +221,7 @@ a:hover {
     display: block;
     -webkit-transition-delay: 0.8s;
     transition-delay: 0.8s;
-    opacity: 0;
+    opacity: 1;
     text-align: center;
     color: #fff;
     overflow: hidden;
@@ -230,7 +231,7 @@ a:hover {
     line-height: 1.15;
     letter-spacing: 3px;
     -webkit-transform: translate(100px, 0%);
-    transform: translate(100px, 0%);
+    transform: translate(0%, 0%);
     -webkit-transition: opacity .2s ease, -webkit-transform .3s ease;
     transition: opacity .2s ease, -webkit-transform .3s ease;
     transition: opacity .2s ease, transform .3s ease;

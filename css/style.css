@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0; }
 
+.dialog {
+  display: none; }
+
 .landing {
   background: url("../images/Landing.jpg") no-repeat;
   background-size: cover;
@@ -460,7 +463,46 @@ header {
   animation: header_anim 1s linear; }
 
 .nav__list-item {
-  font-family: 'Gothic A1', sans-serif; }
+  margin-right: 30px; }
+
+.nav__list-item:last-child {
+  margin-right: 0; }
+
+.nav__list-item a {
+  font-family: 'Gothic A1', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: white;
+  padding-left: 0;
+  text-transform: none;
+  letter-spacing: normal; }
+
+.nav__list-item a:hover {
+  color: lightgray; }
+
+.nav {
+  position: relative;
+  z-index: 100; }
+
+.nav:after {
+  background: none; }
+
+.nav:before, .nav:after {
+  background: none; }
+
+.nav__content {
+  position: absolute;
+  top: 63px;
+  right: 0;
+  width: auto; }
+
+.nav__list {
+  display: flex; }
+
+.nav__list-item a:after {
+  display: none; }
 
 @media only screen and (max-width: 1024px) {
   html .central_block {
