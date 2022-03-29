@@ -403,7 +403,6 @@ header {
   font-family: 'Gothic A1', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
   line-height: 20px;
   color: white;
   padding-left: 0;
@@ -427,7 +426,7 @@ header {
 }
 .nav__content{
   position: absolute;
-  top: 63px;
+  top: 58px;
   right: 0;
   width: auto;
 }
@@ -436,6 +435,9 @@ header {
 }
 .nav__list-item a:after{
   display: none;
+}
+.nav__list-item{
+  font-size: 15px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -454,6 +456,7 @@ header {
   }
   .nav__list-item{
     opacity: 0;
+    font-size: 8vh
   }
   .nav-but-wrap{
     display: inline-block;
@@ -463,12 +466,13 @@ header {
   }
   .nav__list-item a{
     padding-left: 5px;
+    line-height: 8vh;
   }
   .nav__list-item a:hover{
     color: lightgray;
   }
   .nav{
-    position: fixed; z-index: 98;
+    position: relative; z-index: 98;
   }
   .nav:after{
     background: rgba(9,9,12,1);
@@ -477,8 +481,8 @@ header {
     background: rgba(20, 21, 26,0.6);
   }
   .nav__content{
-    position: fixed;
-    top: 50%;
+    position: absolute;
+    top: 50vh;
     right: 0;
     width: 100%;
   }
@@ -487,6 +491,9 @@ header {
   }
   .nav__list-item a:after{
     display: none;
+  }
+  .nav:before, .nav:after{
+    position: absolute;
   }
   html .central_block{
     max-width: 668px;
