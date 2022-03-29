@@ -440,18 +440,25 @@ footer a:hover {
 
 @keyframes header_anim {
   0% {
-    top: -600px; }
-  50% {
     top: -300px; }
+  50% {
+    top: -150px; }
   100% {
     top: 29px; } }
 @keyframes nav_menu {
   0% {
-    top: -600px; }
-  50% {
     top: -300px; }
+  50% {
+    top: -150px; }
   100% {
     top: 50px; } }
+@keyframes nav_btn {
+  0% {
+    margin-top: -300px; }
+  50% {
+    margin-top: -150px; }
+  100% {
+    margin-top: 26px; } }
 @keyframes landing {
   0% {
     left: -1000px; }
@@ -528,6 +535,9 @@ footer a:hover {
 @media only screen and (max-width: 768px) {
   html body .hide {
     max-width: none; }
+
+  .nav-but-wrap {
+    animation: nav_btn 1s linear; }
 
   .nav__list-item {
     opacity: 0;
