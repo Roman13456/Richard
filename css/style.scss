@@ -364,9 +364,7 @@ footer a:hover{
 .ui-dialog .ui-dialog-titlebar{
   background: #FC0A7E; color: #FFFFFF;
 }
-.nav-but-wrap{
-  display: none;
-}
+
 @keyframes  header_anim {
   0%{
     top:-500px;
@@ -415,7 +413,9 @@ header {
 .nav__list-item a:hover{
   color: lightgray;
 }
-
+.nav-but-wrap{
+  display: none;
+}
 .nav{
   position: relative; z-index: 100;
 }
@@ -449,6 +449,45 @@ header {
   }
 }
 @media only screen and (max-width: 768px) {
+  html body .hide{
+    max-width: none;
+  }
+  .nav__list-item{
+    opacity: 0;
+  }
+  .nav-but-wrap{
+    display: inline-block;
+  }
+  .nav__list-item{
+    margin-right: 0;
+  }
+  .nav__list-item a{
+    padding-left: 5px;
+  }
+  .nav__list-item a:hover{
+    color: lightgray;
+  }
+  .nav{
+    position: fixed; z-index: 98;
+  }
+  .nav:after{
+    background: rgba(9,9,12,1);
+  }
+  .nav:before, .nav:after{
+    background: rgba(20, 21, 26,0.6);
+  }
+  .nav__content{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 100%;
+  }
+  .nav__list{
+    display: block;
+  }
+  .nav__list-item a:after{
+    display: none;
+  }
   html .central_block{
     max-width: 668px;
   }
