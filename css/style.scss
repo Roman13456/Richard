@@ -367,13 +367,24 @@ footer a:hover{
 
 @keyframes  header_anim {
   0%{
-    top:-500px;
+    top:-600px;
   }
   50%{
-    top:-200px;
+    top:-300px;
   }
   100%{
     top:29px;
+  }
+}
+@keyframes  nav_menu {
+  0%{
+    top:-600px;
+  }
+  50%{
+    top:-300px;
+  }
+  100%{
+    top:50px;
   }
 }
 @keyframes landing {
@@ -390,8 +401,11 @@ footer a:hover{
 .landing.w-100 .central_block {
   animation: landing 1s linear; position: relative;
 }
-header {
+.logo-wrap {
   animation: header_anim 1s linear;
+}
+.nav__content{
+  animation: nav_menu 1s linear;
 }
 .nav__list-item{
   margin-right: 30px;
@@ -426,7 +440,7 @@ header {
 }
 .nav__content{
   position: absolute;
-  top: 58px;
+  top: 53px;
   right: 0;
   width: auto;
 }
@@ -438,6 +452,9 @@ header {
 }
 .nav__list-item{
   font-size: 15px;
+}
+.logo-wrap{
+  top: 29px;
 }
 
 @media only screen and (max-width: 1024px) {
