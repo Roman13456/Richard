@@ -7,6 +7,9 @@ $font-weight: 400;
 $btn_font-size:16px;
 $background_pink:#FC0A7E;
 $white_color:#FFFFFF;
+html{
+  overflow-x: hidden;
+}
 * {
   padding: 0;
   margin: 0; }

@@ -2,6 +2,9 @@
 @import url(owl.theme.default.css);
 @import url(qwe.css);
 @import url(normalize.css);
+html {
+  overflow-x: hidden; }
+
 * {
   padding: 0;
   margin: 0; }
