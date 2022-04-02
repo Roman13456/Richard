@@ -9,11 +9,20 @@
 .dialog {
   display: none; }
 
+a:hover {
+  color: lightgray;
+  transition: 0.5s; }
+
 .landing {
-  background: url("../images/Landing.jpg") no-repeat;
+  background: linear-gradient(287.15deg, #450E4B 0%, #3C0C41 24.48%, rgba(207, 0, 99, 0) 100%), #CF0063;
   background-size: cover;
   box-sizing: border-box;
   height: 100vh; }
+
+.image {
+  position: absolute;
+  right: 3vh;
+  top: 15%; }
 
 .d_block {
   display: block; }
@@ -96,11 +105,14 @@ header {
     border-radius: 3px;
     padding: 20px 40px;
     text-decoration: none; }
+  .landing a:hover {
+    color: lightgray;
+    transition: 0.5s; }
   .landing .central_block div:first-child {
     padding-left: 10px; }
 
 .second_page {
-  padding-top: 100px;
+  padding: 100px 10px 0;
   background: #1B1B1B; }
   .second_page p {
     font-family: "Gothic A1", sans-serif;
@@ -241,14 +253,15 @@ html .indent {
 .quote {
   max-width: 700px;
   margin: auto;
-  text-align: center; }
+  text-align: center;
+  padding: 0 10px; }
 
 .owl-carousel .quote .quotes img {
   width: 58px;
   display: inline-block; }
 
 .carousel .central_block .quote p {
-  font-family: 'Gothic A1', sans-serif;
+  font-family: "Gothic A1", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -257,33 +270,25 @@ html .indent {
   color: #6B6B6B;
   margin-bottom: 17px; }
 
-.quote .d_flex.align_items_center p:first-child, .quote .statistics .d_flex.align_items_center div p:last-child, .statistics .quote .d_flex.align_items_center div p:last-child {
-  font-family: 'Gothic A1', sans-serif;
+.quote img {
+  margin: 0 20px; }
+
+.carousel .quote .d_flex.align_items_center p {
+  margin-bottom: 0;
+  width: 100%;
+  font-family: "Gothic A1", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  text-align: center;
-  color: #6B6B6B;
-  padding-right: 20px; }
-
-.quote img {
-  margin: 0 20px; }
+  text-align: end;
+  color: #6B6B6B; }
+.carousel .quote .d_flex.align_items_center p:last-child {
+  font-weight: 700;
+  text-align: left; }
 
 .quote .d_flex.align_items_center.center_text {
   justify-content: center; }
-
-.quote .d_flex.align_items_center p:last-child {
-  font-family: 'Gothic A1', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  text-align: center;
-  color: #6B6B6B; }
-
-.carousel .quote .d_flex.align_items_center p {
-  margin-bottom: 0; }
 
 .owl-carousel.owl-loaded {
   margin-bottom: 284px; }
@@ -342,13 +347,15 @@ html .indent {
     background-size: cover;
     padding: 165px 0 176px; }
     .download_page .container a:last-child:hover {
-      color: lightgray; }
+      color: lightgray;
+      transition: 0.5s; }
     .download_page .container a:first-child:hover, .download_page .container a:hover:last-child {
-      color: lightgray; }
+      color: lightgray;
+      transition: 0.5s; }
 
 .form {
   background: #1B1B1B;
-  padding: 129px 0 126px;
+  padding: 129px 10px 126px;
   color: #FFFFFF; }
   .form h3, .form p {
     font-family: "Gothic A1", sans-serif;
@@ -392,7 +399,9 @@ html .indent {
     padding: 22px;
     border: none; }
   .form div input:last-child:hover {
-    color: lightgray; }
+    cursor: pointer;
+    color: lightgray;
+    transition: 0.5s; }
   .form div label {
     display: none; }
 
@@ -410,8 +419,6 @@ footer {
     line-height: 20px;
     color: #6B6B6B;
     margin: 0 15px; }
-  footer a:hover {
-    color: lightgray; }
 
 .ui-widget-content.ui-front.ui-draggable.ui-resizable.ui-dialog.ui-corner-all.ui-widget {
   right: 40%;
@@ -476,7 +483,8 @@ footer {
     text-transform: none;
     letter-spacing: normal; }
   .nav__list-item a:hover {
-    color: lightgray; }
+    color: lightgray;
+    transition: 0.5s; }
   .nav__list-item a:after {
     display: none; }
 
@@ -540,6 +548,21 @@ footer {
   html body .hide {
     max-width: none; }
 
+  .owl-carousel .owl-dots {
+    bottom: -20px; }
+
+  .download_page {
+    padding-top: 50px; }
+
+  .statistics {
+    padding-bottom: 50px; }
+
+  .owl-carousel.owl-loaded {
+    margin-bottom: 100px; }
+
+  html .indent {
+    margin-bottom: 50px; }
+
   .nav-but-wrap {
     animation: nav_btn 1s linear; }
 
@@ -558,7 +581,8 @@ footer {
     line-height: 8vh; }
 
   .nav__list-item a:hover {
-    color: lightgray; }
+    color: lightgray;
+    transition: 0.5s; }
 
   .nav {
     position: relative;
@@ -628,6 +652,14 @@ footer {
 
   footer a {
     margin: 0 15px; } }
+@media only screen and (max-width: 460px) {
+  .form div input:last-child {
+    border-radius: 3px 3px 3px 3px;
+    max-width: 307px;
+    margin-top: 50px; }
+
+  .form div input:nth-child(2) {
+    border-radius: 3px 3px 3px 3px; } }
 @media only screen and (max-width: 420px) {
   .landing h1 {
     font-size: 60px; }
