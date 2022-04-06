@@ -5,27 +5,30 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Richard</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://resources/demos/style.css">
     <script src="https://kit.fontawesome.com/82c8346409.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div id="dialog" class="dialog" title="Richard">
     <p>The app is downloading. Thanks for using our software</p>
 </div>
-<header class="cd-header">
+<header class="cd-header ">
     <div class="header-wrapper central_block">
-        <div class="logo-wrap">
+        <div data-aos="fade-right" class="logo-wrap">
             <a href="#" class="hover-target">
                 <img src="images/IMAGE.png" alt="Richard">
             </a>
         </div>
-        <div class="nav-but-wrap">
+        <div data-aos="fade-left" class="nav-but-wrap">
             <div class="menu-icon hover-target">
                 <span class="menu-icon__line menu-icon__line-left"></span>
                 <span class="menu-icon__line"></span>
@@ -33,39 +36,41 @@
             </div>
         </div>
     </div>
-</header>
-<div class="image d_block">
-    <img class="w-100" src="images/landing_IMAGE.png" alt="landing_img">
-</div>
-<div class="central_block hide">
-    <div class="nav">
-        <div class="nav__content central_block hide">
-            <ul class="nav__list">
-                <li class="nav__list-item active-nav"><a href="#" class="hover-target">About</a></li>
-                <li class="nav__list-item"><a href="#" class="hover-target">Features</a></li>
-                <li class="nav__list-item"><a href="#" class="hover-target">How to Use</a></li>
-                <li class="nav__list-item"><a href="#" class="hover-target">Download</a></li>
-            </ul>
+    <div class="central_block hide ">
+        <div class="nav">
+            <div class="nav__content central_block hide">
+                <ul data-aos="fade-down" class="nav__list">
+                    <li class="nav__list-item active-nav"><a href="#" class="hover-target">About</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Features</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">How to Use</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Download</a></li>
+                </ul>
+            </div>
         </div>
+        <div class='cursor2' id="cursor2"></div>
+        <div class='cursor3' id="cursor3"></div>
     </div>
-    <div class='cursor2' id="cursor2"></div>
-    <div class='cursor3' id="cursor3"></div>
-</div>
+</header>
 <section class="landing w-100">
-    <div class="central_block d_flex">
-        <div>
-            <h1>Momentum</h1>
-            <p>Launch your product — and savor the momentum.</p>
-            <a href="#" id="opener">Get the App</a>
-            <!--<i class="fa-solid fa-arrow-down-long"></i>-->
+    <div class="central_block">
+        <div class="left-side">
+            <div data-aos="zoom-out">
+                <h1>Momentum</h1>
+                <p>Launch your product — and savor the momentum.</p>
+                <a href="#" id="opener">Get the App</a>
+                <!--<i class="fa-solid fa-arrow-down-long"></i>-->
+            </div>
+        </div>
+        <div class="image d_block">
+            <img class="w-100" src="images/landing_IMAGE.png" alt="landing_img">
         </div>
     </div>
 </section>
 <section class="second_page">
-    <div class="central_block">
+    <div data-aos="fade-right" class="central_block">
         <p>Aenean Consectetur Porta</p>
         <h2>Nullam quis risus eget urna mollis<br> ornare vel eu leo.</h2>
-        <div class="d_block">
+        <div class="d_block" data-aos="fade-left">
             <img class="w-100" src="images/under_landing.png" alt="profile">
         </div>
     </div>
@@ -73,33 +78,33 @@
 <section class="presentation">
     <div class="central_block">
         <div class="d_flex space_between align_items_center pics">
-            <div>
+            <div data-aos="fade-right">
                 <p>Aenean Consectetur</p>
                 <h3>Cay sociis nato que penatibus et</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
             </div>
-            <div class="d_block order">
+            <div data-aos="flip-right" class="d_block order">
                 <img class="w-100" src="images/meal.jpg" alt="meal">
             </div>
 
         </div>
         <div class="d_flex space_between align_items_center pics">
-            <div class="d_block">
+            <div data-aos="flip-left" class="d_block">
                 <img class="w-100" src="images/order.jpg" alt="order">
             </div>
-            <div>
+            <div data-aos="fade-left">
                 <p>ConsectUltricies</p>
                 <h3>Amet Ipsum</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
             </div>
         </div>
         <div class="d_flex space_between align_items_center pics">
-            <div>
+            <div data-aos="fade-right">
                 <p>Aenean Consectetur Porta</p>
                 <h3>Magna Porta Sit Bibendum</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
             </div>
-            <div class="d_block order">
+            <div data-aos="flip-right" class="d_block order">
                 <img class="w-100" src="images/meal_2.jpg" alt="meal">
             </div>
         </div>
@@ -107,17 +112,17 @@
 </section>
 <section class="abilities">
         <div class="central_block d_flex space_between w-100 indent">
-            <div class="center_text">
+            <div data-aos="zoom-out" class="center_text">
                 <img src="images/burger.svg" alt="burger">
                 <p><strong>Activity Notifications</strong></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
             </div>
-            <div class="center_text">
+            <div data-aos="zoom-out" class="center_text">
                 <img src="images/spoon_knife.svg" alt="spoon&knife">
                 <p><strong>Custom Timing</strong></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
             </div>
-            <div class="center_text">
+            <div data-aos="zoom-out" class="center_text">
                 <img src="images/statistics.svg" alt="statistics">
                 <p><strong>Mobile Optimized</strong></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
@@ -126,47 +131,50 @@
 </section>
 <section class="statistics">
     <div class="central_block d_flex space_between align_items_center stats">
-        <div class="mr_20 center_text">
+        <div data-aos="zoom-in" class="mr_20 center_text">
             <p>+12k</p>
             <p>Nibh Elit Tristique</p>
         </div>
-        <div class="mr_20 center_text">
+        <div data-aos="zoom-in" class="mr_20 center_text">
             <p>84</p>
             <p>Aenean Condimentum</p>
         </div>
-        <div class="mr_20 center_text">
+        <div data-aos="zoom-in" class="mr_20 center_text">
             <p>3,07</p>
             <p>Quam Inceptos</p>
         </div>
-        <div class="mr_20 center_text">
+        <div data-aos="zoom-in" class="mr_20 center_text">
             <p>24h</p>
             <p>Ullamcorper</p>
         </div>
     </div>
 </section>
 <section class="descriptions">
-        <div class="central_block d_flex space_between align_items_center pics last_two">
-            <div>
+    <div class="central_block">
+        <div class=" d_flex space_between align_items_center pics last_two">
+            <div data-aos="fade-up-right">
                 <p>Aenean Consectetur Porta</p>
                 <h3>Sem Risus Elit Vestibulum</h3>
                 <p>Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
             </div>
-            <div class="order d_block pics">
+            <div data-aos="zoom-in-left" class="order d_block pics">
                 <img class="w-100" src="images/burgers.jpg" alt="burgers">
             </div>
         </div>
-        <div class="d_flex space_between align_items_center pics last_two">
-            <div class="d_block pics">
+        <div class=" d_flex space_between align_items_center pics last_two">
+            <div data-aos="zoom-in-right" class="d_block pics">
                 <img class="w-100" src="images/chips.jpg" alt="chips&burger">
             </div>
-            <div>
+            <div data-aos="fade-up-left">
                 <p>Aenean Consectetur Porta</p>
                 <h3>Parturient Tortor</h3>
                 <p>Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
             </div>
         </div>
+    </div>
+
 </section>
-<section class="carousel">
+<section data-aos="zoom-in" class="carousel">
     <div class="owl-carousel">
         <div>
             <div class="central_block">
@@ -199,20 +207,39 @@
             </div>
         </div>
     </div>
-    <div class="central_block d_block">
+    <div  class="central_block d_block">
         <img class="w-100" src="images/companies.jpg" alt="companies">
     </div>
 </section>
+<div class="central_block">
+    <div class="slider">
+        <div class="first">
+            <a href="#">
+                <img class="w-100" src="images/small_envelope.jpg" alt="small_envelope">
+            </a>
+        </div>
+        <div class="second " style="">
+            <a href="#">
+                <img class="w-100" src="images/Lvivnews.jpg" alt="Lvivnews">
+            </a>
+        </div>
+        <div class="third " >
+            <a href="#">
+                <img class="w-100" src="images/certificate_uah.jpg" alt="certificate">
+            </a>
+        </div>
+    </div>
+</div>
 <section class="download_page">
     <div class="d_block">
         <img class="w-100" src="images/smartphones.jpg" alt="smartphones">
     </div>
     <div class="container">
         <div class="central_block">
-            <h3>Ready to get started?</h3>
+            <h3 class="wow bounceIn">Ready to get started?</h3>
             <div class="center_text d_flex justify_center">
-                <a href="#">Download Now</a>
-                <a href="#">Get in Touch</a>
+                <a class="wow fadeInLeft" href="#">Download Now</a>
+                <a class="wow fadeInRight" href="#">Get in Touch</a>
             </div>
 
         </div>
@@ -221,22 +248,22 @@
 <section class="form">
     <div class="central_block">
         <form class="" action="" method="get" name="form">
-            <h3>Get updates from Richard</h3>
-            <p>New course alerts, discounts and free lessons</p>
+            <h3 class="wow zoomIn">Get updates from Richard</h3>
+            <p class="wow fadeIn">New course alerts, discounts and free lessons</p>
             <div class="d_flex w-100">
                 <label for="email"></label>
-                <input name="email" id="email" placeholder="Enter your email">
-                <input type="submit" value="Subscribe">
+                <input class="wow fadeInLeft" name="email" id="email" placeholder="Enter your email">
+                <input class="wow fadeInRight" type="submit" value="Subscribe">
             </div>
         </form>
     </div>
 </section>
 <footer>
     <div class="central_block">
-        <a href="#" class="center_text d_block">
+        <a href="#" class="wow flipInX center_text d_block">
             <img  src="images/footer_logo.png" alt="footer_logo">
         </a>
-        <div class="d_flex justify_center">
+        <div class="wow zoomInUp d_flex justify_center">
             <a href="#">Email</a>
             <a href="#">Instagram</a>
             <a href="#">Facebook</a>
@@ -246,9 +273,12 @@
         </div>
     </div>
 </footer>
+<script src="js/wow.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-<script src="JS/owl.carousel.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./slick/slick.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
 <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-<script src="JS/Scripts.js"></script>
+<script src="js/Scripts.js"></script>
 </body>
 </html>

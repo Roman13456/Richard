@@ -118,6 +118,64 @@ $(document).ready(function(){
     });
 
 })(jQuery);
+/*SLICK slider*/
+$('.slider').slick({
+    slidesToShow: 3,
+    dots: false,
+    centerPadding: '20px',
+    speed: 600,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToScroll: 1,
+    mobileFirst: true,
+    responsive: [
+        {
+            breakpoint: 320,
+            settings: {
+                dots: false,
+                arrows: false,
+                slidesToShow: 2,
+            }
+        },
+     {
+            breakpoint: 400,
+            settings: {
+                dots: true,
+                arrows: true,
+                slidesToShow: 2,
+            }
+        },
+     {
+            breakpoint: 720,
+            settings: {
+                slidesToShow: 2,
+                dots: true,
+                arrows: true,
+            }
+        },
+     {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 3,
+                dots: true,
+                arrows: true,
+            }
+        },
+     {
+            breakpoint: 1025,
+            settings: "unslick",
+        },
+     ]
+});
+
+AOS.init();
+new WOW().init();
+
+
+
+
+
+
 
 
 

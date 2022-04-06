@@ -1,3 +1,4 @@
+@import "animate.css";
 @import "owl.carousel.css";
 @import "owl.theme.default.css";
 @import "qwe.css";
@@ -7,44 +8,41 @@ $font-weight: 400;
 $btn_font-size:16px;
 $background_pink:#FC0A7E;
 $white_color:#FFFFFF;
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
 html{
   overflow-x: hidden;
 }
 * {
   padding: 0;
   margin: 0; }
+input{
+  display: inline-block;
+}
+a{
+  display: inline-block;
+}
 .dialog {
   display: none; }
 a:hover{
   color: lightgray;
   transition: 0.5s;
 }
-.landing {
-  background: linear-gradient(287.15deg, #450E4B 0%, #3C0C41 24.48%, rgba(207, 0, 99, 0) 100%), #CF0063;
-  background-size: cover;
-  box-sizing: border-box;
-  height: 100vh; }
-.image{
-  position: absolute; right: 3vh; top: 15%;
-}
 .d_block {
   display: block; }
-
 .justify_center {
   justify-content: center; }
-
 .block_inline {
   display: inline-block; }
-
 .w-100 {
   width: 100%; }
-
 .d_flex {
   display: flex; }
-
 .space_between {
   justify-content: space-between; }
-
 .space_around {
   justify-content: space-around; }
 header {
@@ -64,18 +62,56 @@ header {
     line-height: 20px;
     color: $white_color;
     margin-right: 30px;
-    text-decoration: none; }
+    text-decoration: none;
+  }
   a:last-child {
     margin: 0 10px 0 0; }
-}
+  }
 .align_items_center {
   align-items: center; }
 .center_text {
   text-align: center; }
 .navbar {
   margin-right: 10px; }
+.image {
+  max-width: 50%;
+  top: -40%;
+  position: absolute;
+  width: 100%;
+  right: 0;
+  @include max-screen(1024px) {
+    position: static;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
 .landing {
-  padding-bottom: 277px;
+  background: linear-gradient(287.15deg, #450E4B 0%, #3C0C41 24.48%, rgba(207, 0, 99, 0) 100%), #CF0063;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include max-screen(1024px) {
+    padding: 120px 0 24px;
+  }
+  @include max-screen(580px) {
+    display: block;
+    height: auto;
+  }
+  .left-side {
+    width: 57%;
+    @include max-screen(1024px) {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 50px;
+      div{
+        padding: 0 10px;
+      }
+    }
+  }
   h1 {
     margin: 0 0 10px;
     font-family: $font-family;
@@ -84,7 +120,15 @@ header {
     font-size: 80px;
     line-height: 80px;
     color: $white_color;
-    padding-top: 298px; }
+    @include max-screen(576px) {
+      font-size: 60px;
+    }
+    @include max-screen(320px) {
+      font-size: 30px;
+      margin: 0 0 5px;
+    }
+  }
+
   p {
     color: $white_color;
     font-family: $font-family;
@@ -92,7 +136,13 @@ header {
     font-weight: 400;
     font-size: 30px;
     line-height: 44px;
-    margin: 0 0 25px;}
+    margin: 0 0 25px;
+    @include max-screen(320px) {
+      font-size: 25px;
+      margin: 0 0 15px;
+    }
+  }
+
   a {
     color: $white_color;
     font-family: $font-family;
@@ -103,13 +153,17 @@ header {
     background: $background_pink;
     border-radius: 3px;
     padding: 20px 40px;
-    text-decoration: none; }
-  a:hover{
+    text-decoration: none;
+    @include max-screen(320px) {
+      font-size: 25px;
+      padding: 15px 25px;
+    }
+  }
+
+  a:hover {
     color: lightgray;
     transition: 0.5s;
   }
-  .central_block div:first-child {
-    padding-left: 10px; }
 }
 .second_page {
   padding: 100px 10px 0;
@@ -140,7 +194,10 @@ header {
   .d_flex.space_between.align_items_center{
     div{
       max-width: 306px;
-      p:first-child{ font-family: $font-family; font-style: normal; font-weight: $font-weight; font-size: 12px; line-height: 20px;letter-spacing: 2px; text-transform: uppercase; margin-bottom: 30px;color: #A8A8A8;
+      p:first-child{ font-family: $font-family;
+        font-style: normal; font-weight: $font-weight;
+        font-size: 12px; line-height: 20px;letter-spacing: 2px;
+        text-transform: uppercase; margin-bottom: 30px;color: #A8A8A8;
       }
       p:last-child{
         font-family: $font-family;
@@ -205,7 +262,7 @@ header {
       line-height: 24px; margin-bottom: 17px;
     }
     p:last-child{
-      @extend p:nth-child(2);
+      //@extend p:nth-child(2);
       font-weight: $font-weight;
       font-size: $btn_font-size;
       line-height: 30px;
@@ -231,7 +288,7 @@ html .indent{
       line-height: 90px; color: #1B1B1B;
     }
     p:last-child{
-      @extend p:first-child;
+      //@extend p:first-child;
       font-weight: 700;
       font-size: 18px;
       line-height: 24px;
@@ -285,6 +342,7 @@ html .indent{
 }
 .quote .d_flex.align_items_center.center_text{
   justify-content: center;
+  flex-wrap: nowrap;
 }
 .owl-carousel.owl-loaded{
   margin-bottom: 284px;
@@ -297,6 +355,9 @@ html .indent{
 }
 .owl-carousel .owl-dot{
   margin-right: 16px;
+}
+button.owl-dot:last-child{
+  margin: 0;
 }
 .owl-carousel .owl-dot span{
   width: 7px; height: 7px; background: #6B6B6B;display: inline-block;
@@ -316,11 +377,18 @@ html .indent{
   a:first-child{
     padding: 20px 40px; background: $background_pink; text-decoration: none; margin-right: 5px;color: $white_color;
     border-radius: 3px;
+    @include max-screen(375px){
+      max-width: 190px; width: 100%; padding: 20px 0; margin-bottom: 10px; margin-right: 0;
+      margin-left: 0;
+    }
   }
   a:last-child{
-    @extend a:first-child;
+    //@extend a:first-child;
     border: 1px solid #B04BB3;background: none;
     box-sizing: border-box;border-radius: 0;margin: 0 0 0 5px;
+    @include max-screen(375px){
+      margin-left: 0;
+    }
   }
 }
 .download_page{
@@ -457,14 +525,18 @@ footer{
   }
 }
 .landing.w-100 .central_block {
-  animation: landing 1s linear; position: relative;
+   position: relative;
 }
+/**animation: landing 1s linear;
 .logo-wrap {
   animation: header_anim 1s linear;
 }
 .nav__content{
   animation: nav_menu 1s linear;
 }
+.nav-but-wrap{
+    animation: nav_btn 1s linear;
+  }**/
 .nav__list-item{
   margin-right: 30px;
   font-size: 15px;
@@ -508,19 +580,41 @@ footer{
   width: auto;
 }
 .nav__list{
-  display: flex;
+  display: flex; justify-content: end;
 }
 .logo-wrap{
   top: 29px;
 }
-@mixin max-screen($res) {
-  @media screen and (max-width: $res) {
-    @content;
+ .slider {
+   margin: 0 auto;
+ }
+.slick-initialized .slick-slide{
+  margin: 5px;
+}
+
+.slick-initialized .slick-slide img{
+
+}
+.slider{
+  display: flex;
+  @include max-screen(1024px){
+    display: block;
+  }
+  .first,.second,.third{
+    width: 100%;
+    max-width: 100%;
+    margin: 5px;
+    img{
+      border-radius:6px;object-fit: contain;
+    }
   }
 }
+
+
 .central_block {
   max-width: 1200px;
-  margin: auto;
+  margin:  auto;
+  width: 100%;
   @include max-screen(1024px){
     max-width: 924px;
   }
@@ -564,9 +658,6 @@ footer{
   }
   html .indent {
     margin-bottom: 50px;
-  }
-  .nav-but-wrap{
-    animation: nav_btn 1s linear;
   }
   .nav__list-item{
     opacity: 0;
@@ -668,30 +759,18 @@ footer{
   .form div input:last-child {
     border-radius: 3px 3px 3px 3px;
     max-width: 307px;
-    margin-top: 50px;
   }
   .form div input:nth-child(2){
     border-radius: 3px 3px 3px 3px;
+    margin-bottom: 16px;
   }
 }
 @media only screen and (max-width: 420px) {
-  .landing h1{
-    font-size: 60px;
-  }
   footer a:last-child {
     margin: 0 15px;
   }
 }
-@media only screen and (max-width: 360px) {
-  .download_page .container a{
-    margin: 0;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .landing h1{
-    padding-top: 150px;
-  }
-}
+
 
 
 

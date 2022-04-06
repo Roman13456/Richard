@@ -1,3 +1,4 @@
+@import url(animate.css);
 @import url(owl.carousel.css);
 @import url(owl.theme.default.css);
 @import url(qwe.css);
@@ -9,23 +10,18 @@ html {
   padding: 0;
   margin: 0; }
 
+input {
+  display: inline-block; }
+
+a {
+  display: inline-block; }
+
 .dialog {
   display: none; }
 
 a:hover {
   color: lightgray;
   transition: 0.5s; }
-
-.landing {
-  background: linear-gradient(287.15deg, #450E4B 0%, #3C0C41 24.48%, rgba(207, 0, 99, 0) 100%), #CF0063;
-  background-size: cover;
-  box-sizing: border-box;
-  height: 100vh; }
-
-.image {
-  position: absolute;
-  right: 3vh;
-  top: 15%; }
 
 .d_block {
   display: block; }
@@ -78,8 +74,43 @@ header {
 .navbar {
   margin-right: 10px; }
 
+.image {
+  max-width: 50%;
+  top: -40%;
+  position: absolute;
+  width: 100%;
+  right: 0; }
+  @media screen and (max-width: 1024px) {
+    .image {
+      position: static;
+      max-width: 80%;
+      margin: 0 auto; } }
+
 .landing {
-  padding-bottom: 277px; }
+  background: linear-gradient(287.15deg, #450E4B 0%, #3C0C41 24.48%, rgba(207, 0, 99, 0) 100%), #CF0063;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media screen and (max-width: 1024px) {
+    .landing {
+      padding: 120px 0 24px; } }
+  @media screen and (max-width: 580px) {
+    .landing {
+      display: block;
+      height: auto; } }
+  .landing .left-side {
+    width: 57%; }
+    @media screen and (max-width: 1024px) {
+      .landing .left-side {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 50px; }
+        .landing .left-side div {
+          padding: 0 10px; } }
   .landing h1 {
     margin: 0 0 10px;
     font-family: "Gothic A1", sans-serif;
@@ -87,8 +118,14 @@ header {
     font-weight: 400;
     font-size: 80px;
     line-height: 80px;
-    color: #FFFFFF;
-    padding-top: 298px; }
+    color: #FFFFFF; }
+    @media screen and (max-width: 576px) {
+      .landing h1 {
+        font-size: 60px; } }
+    @media screen and (max-width: 320px) {
+      .landing h1 {
+        font-size: 30px;
+        margin: 0 0 5px; } }
   .landing p {
     color: #FFFFFF;
     font-family: "Gothic A1", sans-serif;
@@ -97,6 +134,10 @@ header {
     font-size: 30px;
     line-height: 44px;
     margin: 0 0 25px; }
+    @media screen and (max-width: 320px) {
+      .landing p {
+        font-size: 25px;
+        margin: 0 0 15px; } }
   .landing a {
     color: #FFFFFF;
     font-family: "Gothic A1", sans-serif;
@@ -108,11 +149,13 @@ header {
     border-radius: 3px;
     padding: 20px 40px;
     text-decoration: none; }
+    @media screen and (max-width: 320px) {
+      .landing a {
+        font-size: 25px;
+        padding: 15px 25px; } }
   .landing a:hover {
     color: lightgray;
     transition: 0.5s; }
-  .landing .central_block div:first-child {
-    padding-left: 10px; }
 
 .second_page {
   padding: 100px 10px 0;
@@ -142,7 +185,7 @@ header {
   background-color: #FFFFFF; }
   .presentation .d_flex.space_between.align_items_center div {
     max-width: 306px; }
-    .presentation .d_flex.space_between.align_items_center div p:first-child, .presentation .statistics .d_flex.space_between.align_items_center div p:last-child, .statistics .presentation .d_flex.space_between.align_items_center div p:last-child {
+    .presentation .d_flex.space_between.align_items_center div p:first-child {
       font-family: "Gothic A1", sans-serif;
       font-style: normal;
       font-weight: 400;
@@ -179,7 +222,7 @@ header {
   padding: 0 10px; }
   .descriptions .d_flex.space_between.align_items_center div {
     max-width: 306px; }
-    .descriptions .d_flex.space_between.align_items_center div p:first-child, .descriptions .statistics .d_flex.space_between.align_items_center div p:last-child, .statistics .descriptions .d_flex.space_between.align_items_center div p:last-child {
+    .descriptions .d_flex.space_between.align_items_center div p:first-child {
       font-family: "Gothic A1", sans-serif;
       font-style: normal;
       font-weight: 400;
@@ -208,7 +251,7 @@ header {
 
 .d_flex.space_between.w-100 .center_text {
   max-width: 371px; }
-  .d_flex.space_between.w-100 .center_text p:nth-child(2), .d_flex.space_between.w-100 .center_text p:last-child {
+  .d_flex.space_between.w-100 .center_text p:nth-child(2) {
     font-family: "Gothic A1", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -229,7 +272,7 @@ html .indent {
 
 .statistics {
   padding-bottom: 170px; }
-  .statistics .d_flex div p:first-child, .statistics .d_flex div p:last-child {
+  .statistics .d_flex div p:first-child {
     font-family: "Gothic A1", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -291,7 +334,8 @@ html .indent {
   text-align: left; }
 
 .quote .d_flex.align_items_center.center_text {
-  justify-content: center; }
+  justify-content: center;
+  flex-wrap: nowrap; }
 
 .owl-carousel.owl-loaded {
   margin-bottom: 284px; }
@@ -308,6 +352,9 @@ html .indent {
 
 .owl-carousel .owl-dot {
   margin-right: 16px; }
+
+button.owl-dot:last-child {
+  margin: 0; }
 
 .owl-carousel .owl-dot span {
   width: 7px;
@@ -327,19 +374,30 @@ html .indent {
   text-align: center;
   margin-bottom: 40px;
   color: #FFFFFF; }
-.container a:first-child, .container a:last-child {
+.container a:first-child {
   padding: 20px 40px;
   background: #FC0A7E;
   text-decoration: none;
   margin-right: 5px;
   color: #FFFFFF;
   border-radius: 3px; }
+  @media screen and (max-width: 375px) {
+    .container a:first-child {
+      max-width: 190px;
+      width: 100%;
+      padding: 20px 0;
+      margin-bottom: 10px;
+      margin-right: 0;
+      margin-left: 0; } }
 .container a:last-child {
   border: 1px solid #B04BB3;
   background: none;
   box-sizing: border-box;
   border-radius: 0;
   margin: 0 0 0 5px; }
+  @media screen and (max-width: 375px) {
+    .container a:last-child {
+      margin-left: 0; } }
 
 .download_page {
   padding-top: 118px; }
@@ -352,7 +410,7 @@ html .indent {
     .download_page .container a:last-child:hover {
       color: lightgray;
       transition: 0.5s; }
-    .download_page .container a:first-child:hover, .download_page .container a:hover:last-child {
+    .download_page .container a:first-child:hover {
       color: lightgray;
       transition: 0.5s; }
 
@@ -464,15 +522,18 @@ footer {
   100% {
     left: 0; } }
 .landing.w-100 .central_block {
-  animation: landing 1s linear;
   position: relative; }
 
+/**animation: landing 1s linear;
 .logo-wrap {
-  animation: header_anim 1s linear; }
-
-.nav__content {
-  animation: nav_menu 1s linear; }
-
+  animation: header_anim 1s linear;
+}
+.nav__content{
+  animation: nav_menu 1s linear;
+}
+.nav-but-wrap{
+    animation: nav_btn 1s linear;
+  }**/
 .nav__list-item {
   margin-right: 30px;
   font-size: 15px; }
@@ -514,14 +575,35 @@ footer {
   width: auto; }
 
 .nav__list {
-  display: flex; }
+  display: flex;
+  justify-content: end; }
 
 .logo-wrap {
   top: 29px; }
 
+.slider {
+  margin: 0 auto; }
+
+.slick-initialized .slick-slide {
+  margin: 5px; }
+
+.slider {
+  display: flex; }
+  @media screen and (max-width: 1024px) {
+    .slider {
+      display: block; } }
+  .slider .first, .slider .second, .slider .third {
+    width: 100%;
+    max-width: 100%;
+    margin: 5px; }
+    .slider .first img, .slider .second img, .slider .third img {
+      border-radius: 6px;
+      object-fit: contain; }
+
 .central_block {
   max-width: 1200px;
-  margin: auto; }
+  margin: auto;
+  width: 100%; }
   @media screen and (max-width: 1024px) {
     .central_block {
       max-width: 924px; } }
@@ -565,9 +647,6 @@ footer {
 
   html .indent {
     margin-bottom: 50px; }
-
-  .nav-but-wrap {
-    animation: nav_btn 1s linear; }
 
   .nav__list-item {
     opacity: 0;
@@ -658,22 +737,13 @@ footer {
 @media only screen and (max-width: 460px) {
   .form div input:last-child {
     border-radius: 3px 3px 3px 3px;
-    max-width: 307px;
-    margin-top: 50px; }
+    max-width: 307px; }
 
   .form div input:nth-child(2) {
-    border-radius: 3px 3px 3px 3px; } }
+    border-radius: 3px 3px 3px 3px;
+    margin-bottom: 16px; } }
 @media only screen and (max-width: 420px) {
-  .landing h1 {
-    font-size: 60px; }
-
   footer a:last-child {
     margin: 0 15px; } }
-@media only screen and (max-width: 360px) {
-  .download_page .container a {
-    margin: 0; } }
-@media only screen and (max-width: 320px) {
-  .landing h1 {
-    padding-top: 150px; } }
 
 /*# sourceMappingURL=style.css.map */
