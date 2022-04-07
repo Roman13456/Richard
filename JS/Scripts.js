@@ -168,7 +168,7 @@ $('.slider').slick({
      ]
 });
 
-//AOS.init();
+AOS.init();//turn aos anim on
 //new WOW().init();
 
 
