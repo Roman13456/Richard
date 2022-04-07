@@ -168,8 +168,8 @@ $('.slider').slick({
      ]
 });
 
-AOS.init();
-new WOW().init();
+//AOS.init();
+//new WOW().init();
 
 
 

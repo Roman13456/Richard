@@ -373,7 +373,7 @@ button.owl-dot:last-child {
   text-align: center;
   margin-bottom: 40px;
   color: #FFFFFF; }
-.container a:first-child {
+.container a:first-child, .container a:last-child {
   padding: 20px 40px;
   background: #FC0A7E;
   text-decoration: none;
@@ -381,7 +381,7 @@ button.owl-dot:last-child {
   color: #FFFFFF;
   border-radius: 3px; }
   @media screen and (max-width: 375px) {
-    .container a:first-child {
+    .container a:first-child, .container a:last-child {
       max-width: 190px;
       width: 100%;
       padding: 20px 0;
@@ -409,7 +409,7 @@ button.owl-dot:last-child {
     .download_page .container a:last-child:hover {
       color: lightgray;
       transition: 0.5s; }
-    .download_page .container a:first-child:hover {
+    .download_page .container a:first-child:hover, .download_page .container a:hover:last-child {
       color: lightgray;
       transition: 0.5s; }
 

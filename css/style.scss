@@ -383,7 +383,7 @@ button.owl-dot:last-child{
     }
   }
   a:last-child{
-    //@extend a:first-child;
+    @extend a:first-child;
     border: 1px solid #B04BB3;background: none;
     box-sizing: border-box;border-radius: 0;margin: 0 0 0 5px;
     @include max-screen(375px){
