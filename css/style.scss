@@ -597,7 +597,13 @@ footer{
 }
 .slider{
   display: flex;
+  div:last-child{
+    display: none;
+  }
   @include max-screen(1024px){
+    display: block;
+  }
+  div:last-child{
     display: block;
   }
   .first,.second,.third{

@@ -589,9 +589,13 @@ footer {
 
 .slider {
   display: flex; }
+  .slider div:last-child {
+    display: none; }
   @media screen and (max-width: 1024px) {
     .slider {
       display: block; } }
+  .slider div:last-child {
+    display: block; }
   .slider .first, .slider .second, .slider .third {
     width: 100%;
     max-width: 100%;
