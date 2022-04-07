@@ -169,7 +169,7 @@ $('.slider').slick({
 });
 
 AOS.init();//turn aos anim on
-//new WOW().init();
+new WOW().init();
 
 
 
